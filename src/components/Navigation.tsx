@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/drift-wash-logo.jpg";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,10 +35,12 @@ const Navigation = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center space-x-2">
-            <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-2xl font-bold text-primary-foreground">DW</span>
-            </div>
+          <a href="#home" className="flex items-center space-x-3">
+            <img 
+              src={logo} 
+              alt="Drift Wash Logo" 
+              className="w-14 h-14 object-contain"
+            />
             <span className="text-2xl font-bold text-primary">Drift Wash</span>
           </a>
 
