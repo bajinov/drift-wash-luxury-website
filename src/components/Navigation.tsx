@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "@/assets/drift-wash-logo.jpg";
+import logo from "@/assets/drift-wash-logo.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);

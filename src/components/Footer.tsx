@@ -1,4 +1,5 @@
 import { Phone, MapPin, Mail } from "lucide-react";
+import logo from "@/assets/drift-wash-logo.png";
 
 const Footer = () => {
   const whatsappNumber = "919962021310";
@@ -9,10 +10,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-xl font-bold text-primary-foreground">DW</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src={logo} 
+                alt="Drift Wash Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <span className="text-xl font-bold text-primary">Drift Wash</span>
             </div>
             <p className="text-muted-foreground mb-4">
