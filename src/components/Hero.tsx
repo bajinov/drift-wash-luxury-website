@@ -75,7 +75,14 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-white/80">
+            {/* Info Note */}
+            <div className="mt-6 max-w-xl mx-auto">
+              <div className="bg-white/15 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-3 text-sm text-white/90">
+                <span className="text-highlight font-medium">Note:</span> Customers only need to provide water and an electrical point. Our trained team arrives fully equipped to clean and detail your car professionally.
+              </div>
+            </div>
+
+            <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-white/80">
               <div className="flex items-center space-x-2">
                 <span className="w-2 h-2 bg-success rounded-full"></span>
                 <span>Free service on OMR Road</span>
